@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="arsenalstyle.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="home.html"><img src="image/pngaaa.com-4818511.png"
+                        width="50px"></a>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img width="50px"
+                                src="image/pngaaa.com-4818511.png"></h1>
+                        <button type=" button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2 active" aria-current="page" href="home.html">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-4" href="#" 5role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    GAME INFORMATION
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="agent.html">AGENTS</a></li>
+                                    <li><a class="dropdown-item" href="map.html">MAPS</a></li>
+                                    <li><a class="dropdown-item" href="arsenal.html">ARSENAL</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2"
+                                    href="https://playvalorant.com/en-us/leaderboards/">LEADERBOARD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2"
+                                    href="https://support-valorant.riotgames.com/hc/en-us/">SUPPORT</a>
+                            </li>
+                            <li class="nav-item dropdown" id="abc">
+                                <a class="nav-link dropdown-toggle fs-4 mx-lg-2" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    OUR SOCIAL
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://twitter.com/valorant">Twitter</a></li>
+                                    <li><a class="dropdown-item" href="https://www.youtube.com/@valorant">YouTube</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.instagram.com/valorant/">Instagram</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.tiktok.com/@valorant">TikTok</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.facebook.com/VALORANTvn/?brand_redir=103808897687593">Facebook</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://discord.com/invite/valorant">Discord</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="https://valorantesports.com/schedule">ESPORT <i
+                                        class="fa-solid fa-arrow-trend-up"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="https://playvalorant.com/en-us/pbe/">PBE SIGN
+                                    UP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fas fa-globe" style="font-size: 20px; color: white; padding: 1rem;"></i>
+                <a class="login-button" href="login.html">LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="hero"></div>
+
+    <div class="wrapper">
+        <div class="menu">
+            <select id="name" class="form-select" aria-label="Default select example">
+                <option selected>ALL WEAPONS</option>
+                <option value="brimstone">SIDEARMS</option>
+                <option value="phoenix">SMGS</option>
+                <option value="sage">SHOTGUNS</option>
+            </select>
+        </div>
+        <div class="content">
+            <div id="brimstone" class="data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121757074_dc9d7149f38687b71877a81343c4f015.jpg"
+                                        class="card-img-top" alt="classic">
+                                    <div class="card-body">
+                                        <h2>CLASSIC</h2>
+                                        <p>TYPE//SIDEARMS</p>
+                                        <p>Primary fire lands precise shots when still, and is equipped with an
+                                            alternate burst-firing mode for close encounters.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121761678_0b2bb2f8fdb6b24691fc5b553ff2615e.jpg"
+                                        class="card-img-top" alt="shorty">
+                                    <div class="card-body">
+                                        <h2>SHORTY</h2>
+                                        <p>TYPE//SIDEARMS</p>
+                                        <p>A nimble, short barrel shotgun that is deadly at close range but can only
+                                            fire twice before needing to reload. Pairs well with long range weapons.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121765573_1d123378e166fdc2a327937d02dbfa32.jpg"
+                                        class="card-img-top" alt="frenzy">
+                                    <div class="card-body">
+                                        <h2>FRENZY</h2>
+                                        <p>TYPE//SIDEARMS</p>
+                                        <p>Lightweight machine pistol that excels at firing on the move. Its high
+                                            rate-of-fire can be difficult to control, so try short bursts at medium
+                                            ranges.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121754908_83d4a5217f080fa8060105a8cbc8919c.jpg"
+                                        class="card-img-top" alt="ghost">
+                                    <div class="card-body">
+                                        <h2>GHOST</h2>
+                                        <p>TYPE//SIDEARMS</p>
+                                        <p>The Ghost is accurate and carries a large magazine if you miss. Distant
+                                            targets require a controlled fire rate. Quickly tap the trigger when you can
+                                            see the whites of their eyes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="phoenix" class="data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121760301_70d3679acab044f16522400b8749c43b.jpg"
+                                        class="card-img-top" alt="ghost">
+                                    <div class="card-body">
+                                        <h2>GHOST</h2>
+                                        <p>TYPE//SMGS</p>
+                                        <p>The Ghost is accurate and carries a large magazine if you miss. Distant
+                                            targets require a controlled fire rate. Quickly tap the trigger when you
+                                            can see the whites of their eyes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121761678_0b2bb2f8fdb6b24691fc5b553ff2615e.jpg"
+                                        class="card-img-top" alt="spectre">
+                                    <div class="card-body">
+                                        <h2>SPECTRE</h2>
+                                        <p>TYPE//SMGS</p>
+                                        <p>A jack-of-all-trades weapon with a great balance of damage, fire rate,
+                                            and accuracy—at both short and mid range.
+
+                                            It haunts the corners of every map and requires only steady aim to drop
+                                            foes at long distance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sage" class="data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121770362_24f929708ebc72b2ca10d2b045e62f5a.jpg"
+                                        class="card-img-top" alt="bucky">
+                                    <div class="card-body">
+                                        <h2>BUCKY</h2>
+                                        <p>TYPE//SHOTGUNS</p>
+                                        <p>Heavy but stable, Bucky’s primary fire is for holding tight corners or
+                                            charging close quarters. Alternate fire strikes targets at medium range.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-nd-12 col-12">
+                            <div class="agent">
+                                <div class="card mb-3">
+                                    <img src="image/z4991121760429_cd09c9c3c383670c703f304b592782e0.jpg"
+                                        class="card-img-top" alt="judge">
+                                    <div class="card-body">
+                                        <h2>JUDGE</h2>
+                                        <p>TYPE//SMGS</p>
+                                        <p>The Judge is stable at the stand but volatile when fired rapidly.
+
+                                            Primary fire hammers short range targets and you’ll need to be steady to
+                                            nail anything beyond an arm's-length.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="nen">
+            <div class="row">
+                <div class="col">
+                    <img class="logo" src="image/6095213753a8bf00040ff3a5.png">
+                    <p>RIOT GAME, VALORANT, AND ANY ASSOCIATED LOGOS ARE TRADEMARKS, SERVICE MARKS, AND/OR
+                        REGISTERED
+                        TRADEMARKS OF RIOT GAMES, INC.</p>
+                </div>
+                <div class="col">
+                    <h3>OFFICE</h3>
+                    <p>ABC ROAD</p>
+                    <p>California</p>
+                    <p>Vietnam</p>
+                    <p class="email-id">riot.game@gmail.com</p>
+                    <h4>+91 - 0123456789</h4>
+                </div>
+                <div class="col">
+                    <h3>CONTACT</h3>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-arrow-turn-up"></i></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

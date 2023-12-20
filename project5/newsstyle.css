@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:ital,wght@0,100;0,500;1,100&family=Roboto:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,500;1,800&family=Poppins:ital,wght@0,100;0,500;1,100&family=Roboto:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+@font-face {
+    font-family: "Valorant";
+    src: url("Valorant.otf");
+}
+
+@font-face {
+    font-family: "arkaim";
+    src: url("DFVNArkaim/OpenType-PS/DFVN\ Arkaim\ Regular.otf");
+}
+
+@font-face {
+    font-family: "spacehabitat";
+    src: url("DFVNMBFSpaceHabitat/OpenType-PS/DFVN\ MBF\ Space\ Habitat\ Regular.otf");
+}
+
+@font-face {
+    font-family: "DIN Next LT Pro Bold";
+    src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot");
+    src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.svg#DIN Next LT Pro Bold") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+
+.navbar-brand {
+    transition: 0.3s;
+    padding-left: 30px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(233, 7, 7), rgb(227, 125, 22));
+    margin: 7px;
+    padding: 3px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    font-size: 13px;
+}
+
+.login-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.navbar {
+    height: 80px;
+    background: #222;
+
+    .offcanvas-body {
+        .dropdown {
+            .dropdown-menu {
+                width: 150px;
+                background-color: #111;
+                font-size: 1.5rem;
+                height: 100px;
+
+                .dropdown-item {
+                    color: white;
+
+                    &:hover {
+                        background-color: #222;
+                    }
+                }
+            }
+        }
+
+        #abc {
+            .dropdown-menu {
+                height: 170px;
+            }
+        }
+    }
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.8rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 700;
+    position: relative;
+    font-size: 50px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #000;
+}
+
+@media (min-width: 990px) {
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #FE4B74;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width:700px) {
+    .navbar-brand {
+        padding-left: 3px;
+        width: 15px;
+    }
+
+    .login-button {
+        width: 30%;
+    }
+}
+
+/* about */
+
+#about {
+    background: #111;
+}
+
+#about .heading {
+    color: white;
+    font-size: 50px;
+    padding-top: 13vh;
+    padding-bottom: 10px
+}
+
+#about .about-text h2 {
+    padding-top: 5vh;
+    color: white;
+}
+
+#about .about-text p {
+    color: #666777;
+    font-size: 1.6rem;
+}
+
+#about .about-text .btn {
+    background: linear-gradient(to right, rgb(233, 7, 7), rgb(227, 125, 22));
+    border: 1px solid red;
+}
+
+#about .row {
+    padding: 10px;
+}
+
+/* footer */
+
+footer {
+    background: #111;
+}
+
+footer .nen {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .row .col {
+    flex-basis: 33%;
+    padding: 10px;
+}
+
+footer .row .col .logo {
+    width: 70px;
+    margin-bottom: 0;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background: #e5243f;
+    color: white;
+    border-radius: 50%;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}

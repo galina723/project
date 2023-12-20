@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agentstyle.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="home.html"><img src="image/pngaaa.com-4818511.png"
+                        width="50px"></a>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img width="50px"
+                                src="image/pngaaa.com-4818511.png"></h1>
+                        <button type=" button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2 active" aria-current="page" href="home.html">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-4" href="#" 5role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    GAME INFORMATION
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="agent.html">AGENTS</a></li>
+                                    <li><a class="dropdown-item" href="map.html">MAPS</a></li>
+                                    <li><a class="dropdown-item" href="arsenal.html">ARSENAL</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2"
+                                    href="https://playvalorant.com/en-us/leaderboards/">LEADERBOARD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2"
+                                    href="https://support-valorant.riotgames.com/hc/en-us/">SUPPORT</a>
+                            </li>
+                            <li class="nav-item dropdown" id="abc">
+                                <a class="nav-link dropdown-toggle fs-4 mx-lg-2" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    OUR SOCIAL
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://twitter.com/valorant">Twitter</a></li>
+                                    <li><a class="dropdown-item" href="https://www.youtube.com/@valorant">YouTube</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.instagram.com/valorant/">Instagram</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.tiktok.com/@valorant">TikTok</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.facebook.com/VALORANTvn/?brand_redir=103808897687593">Facebook</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://discord.com/invite/valorant">Discord</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="https://valorantesports.com/schedule">ESPORT <i
+                                        class="fa-solid fa-arrow-trend-up"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 mx-lg-2" href="https://playvalorant.com/en-us/pbe/">PBE SIGN
+                                    UP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fas fa-globe" style="font-size: 20px; color: white; padding: 1rem;"></i>
+                <a class="login-button" href="login.html">LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="hero"></div>
+
+    <div class="wrapper">
+        <div class="menu">
+            <select id="name" class="form-select" aria-label="Default select example">
+                <option selected>SELECT AN AGENT</option>
+                <option value="brimstone">BRIMSTONE</option>
+                <option value="phoenix">PHOENIX</option>
+                <option value="sage">SAGE</option>
+                <option value="sova">SOVA</option>
+                <option value="viper">VIPER</option>
+                <option value="cypher">CYPHER</option>
+                <option value="reyna">REYNA</option>
+                <option value="killjoy">KILLJOY</option>
+                <option value="omen">OMEN</option>
+                <option value="jett">JETT</option>
+                <option value="raze">RAZE</option>
+                <option value="skye">SKYE</option>
+            </select>
+        </div>
+        <div class="content">
+            <div id="brimstone" class="data">
+                <div class="container">
+                    <img src="image/1091960.jpg" alt="brimstone">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>CONTROLLER<i class="fa-solid fa-hand-fist"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Joining from the U.S.A, Brimstone's orbital arsenal ensures his squad always has the
+                            advantage.
+                            His ability to deliver utility precisely and safely make him the unmatched
+                            boots-on-the-ground
+                            commander</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - INCENDIARY
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP an incendiary grenade launcher, FIRE to launch a grenade
+                                        that detonates as it comes to a rest on the floor, creating a lingering fire
+                                        zone that damages players within the zone.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - SKY SMOKE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a tactical map. FIRE to set locations where Brimstone's
+                                        smoke clouds will land. ALT FIRE to confirm, launching long-lasting smoke clouds
+                                        that block vision in the selected area.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - STIM BEACON
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a stim beacon. FIRE to toss the stim beacon in front of
+                                        Brimstone. Upon landing, the stim beacon will create a field that grants players
+                                        RapidFire.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - ORBITAL STRIKE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a tactical map. FIRE to launch a lingering orbital strike
+                                        laser at the selected location, dealing high damage-over-time to players caught
+                                        in the selected area.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="phoenix" class="data">
+                <div class="container">
+                    <img src="image/1078458.png" alt="phoenix">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>DUELIST<i class="fa-solid fa-cloud-bolt"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting
+                            the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a
+                            fight on his own terms.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - CURVEBALL
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a flare orb that takes a curving path and detonates
+                                        shortly after throwing. FIRE to curve the flare orb to the left, detonating and
+                                        blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to
+                                        the right.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - HOT HANDS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a fireball. FIRE to throw a fireball that explodes after
+                                        a set amount of time or upon hitting the ground, creating a lingering fire zone
+                                        that damages enemies.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    FC - BLAZE </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a flame wall. FIRE to create a line of flame that moves
+                                        forward, creating a wall of fire that blocks vision and damages players passing
+                                        through it. HOLD FIRE to bend the wall in the direction of your crosshair.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - RUN IT BACK
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY place a marker at Phoenix’s location. While this
+                                        ability is active, dying or allowing the timer to expire will end this ability
+                                        and bring Phoenix back to this location with full health.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sage" class="data">
+                <div class="container">
+                    <img src="image/sage-valorant-pc-games-2020-games-3840x2160-2819.jpg" alt="sage">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>SENTINEL<i class="fa-solid fa-droplet"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>The stronghold of China, Sage creates safety for herself and her team wherever she goes.
+                            Able to revive fallen friends and stave off aggressive pushes, she provides a calm
+                            center to a hellish fight.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - SLOW ORB
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a slowing orb. FIRE to throw a slowing orb forward
+                                        that detonates upon landing, creating a lingering field that slows players
+                                        caught inside of it.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - HEALING ORB
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a healing orb. FIRE with your crosshairs over a
+                                        damaged ally to activate a heal-over-time on them. ALT FIRE while Sage is
+                                        damaged to activate a self heal-over-time.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - BARRIER ORB
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE
+                                        rotates the targeter.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - RESURRECTION
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a resurrection ability. FIRE with your crosshairs
+                                        placed over a dead ally to begin resurrecting them. After a brief channel,
+                                        the ally will be brought back to life with full health.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sova" class="data">
+                <div class="container">
+                    <img src="image/sova-valorant-pc-games-3840x2160-7472.jpg" alt="sova">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>INITIATOR<i class="fa-solid fa-sun"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies
+                            with ruthless efficiency and precision. His custom bow and incredible scouting abilities
+                            ensure that even if you run, you cannot hide.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - SHOCK BOLT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a bow with a shock bolt. FIRE to send the explosive bolt
+                                        forward, detonating upon collision and damaging players nearby. HOLD FIRE to
+                                        extend the range of the projectile. ALT FIRE to add up to two bounces to this
+                                        arrow.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - RECON BOLT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a bow with recon bolt. FIRE to send the recon bolt
+                                        forward, activating upon collision and Revealing the location of nearby enemies
+                                        caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD
+                                        FIRE to extend the range of the projectile. ALT FIRE to add up to two bounces to
+                                        this arrow.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - OWL DRONE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP an owl drone. FIRE to deploy and take control of movement
+                                        of the drone. While in control of the drone, FIRE to shoot a marking dart. This
+                                        dart will Reveal the location of any player struck by the dart. Enemies can
+                                        destroy the Owl Drone.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - HUNTER'S FURY
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a bow with three long-range wall-piercing energy blasts.
+                                        FIRE to release an energy blast in a line in front of Sova, dealing damage and
+                                        revealing the location of enemies caught in the line. This ability can be
+                                        RE-USED up to two more times while the ability timer is active.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="viper" class="data">
+                <div class="container">
+                    <img src="image/1097491.jpg" alt="viper">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>CONTROLLER<i class="fa-solid fa-hand-fist"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>The American Chemist, Viper deploys an array of poisonous chemical devices to control the
+                            battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames
+                            surely will.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - POISON CLOUD
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a gas emitter. FIRE to throw the emitter that perpetually
+                                        remains throughout the round. RE-USE the ability to create a toxic gas cloud at
+                                        the cost of fuel. This ability can be RE-USED more than once and can be picked
+                                        up to be REDEPLOYED.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - TOXIC SCREEN
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a gas emitter launcher. FIRE to deploy a long line of gas
+                                        emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of
+                                        fuel. This ability can be RE-USED more than once.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - SNAKE BITE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a chemical launcher. FIRE to launch a canister that
+                                        shatters upon hitting the floor, creating a lingering chemical zone that damages
+                                        and slows enemies</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - VIPER'S PIT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all
+                                        directions around Viper, creating a large cloud that reduces the vision range
+                                        and maximum health of players inside of it.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cypher" class="data">
+                <div class="container">
+                    <img src="image/1244843.jpg" alt="cypher">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>
+                        <P>SENTINEL<i class="fa-solid fa-droplet"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on
+                            the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always
+                            watching.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - CYBER CAGE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        INSTANTLY toss the cyber cage in front of Cypher. Activate to create a zone that
+                                        blocks vision and slows enemies who pass through it.
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - SPYCAM
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a spycam. FIRE to place the spycam at the targeted
+                                        location. RE-USE this ability to take control of the camera's view. While in
+                                        control of the camera, FIRE to shoot a marking dart. This dart will Reveal the
+                                        location of any player struck by the dart. This ability can be picked up to be
+                                        REDEPLOYED.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - TRAPWIRE
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a trapwire. FIRE to place a destructible and covert
+                                        tripwire at the targeted location creating a line that spans between the placed
+                                        location and the wall opposite. Enemy players who cross a tripwire will be
+                                        tethered, revealed, and dazed after a short period if they do not destroy the
+                                        device in time. This ability can be picked up to be REDEPLOYED.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - NEURAL THEFT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY use on a dead enemy player in your crosshairs to
+                                        reveal the location of all living enemy players.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="reyna" class="data">
+                <div class="container">
+                    <img src="image/1340581.png" alt="reyna">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>DUELIST<i class="fa-solid fa-cloud-bolt"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she
+                            scores. Her capability is only limited by her raw skill, making her highly dependent on
+                            performance.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - DEVOUR
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Enemies killed by Reyna leave behind Soul Orbs that last 3
+                                        seconds. INSTANTLY consume a nearby soul orb, rapidly healing for a short
+                                        duration. Health gained through this skill exceeding 100 will decay over time.
+                                        If EMPRESS is active, this skill will automatically cast and not consume the
+                                        orb.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - DISMISS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY consume a nearby soul orb, becoming intangible for a
+                                        short duration. If EMPRESS is active, also become invisible.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - LEER
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a
+                                        short distance forward. The eye will Nearsight all enemies who look at it.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - EMPRESS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY enter a frenzy, increasing firing speed, equip and
+                                        reload speed dramatically. Scoring a kill renews the duration</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="killjoy" class="data">
+                <div class="container">
+                    <img src="image/1208008.png" alt="killjoy">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>SENTINEL<i class="fa-solid fa-droplet"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of
+                            inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will
+                            help make short work of them.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - ALARMBOT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a covert Alarmbot. FIRE to deploy a bot that hunts down
+                                        enemies that get in range. After reaching its target, the bot explodes, applying
+                                        Vulernable. HOLD EQUIP to recall a deployed bot.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - TURRET
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a Turret. FIRE to deploy a turret that fires at enemies
+                                        in a 180 degree cone. HOLD EQUIP to recall the deployed turret.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - NANOSWARM
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a Nanoswarm grenade. FIRE to throw the grenade. Upon
+                                        landing, the Nanoswarm goes covert. ACTIVATE the Nanoswarm to deploy a damaging
+                                        swarm of nanobots.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - LOCKDOWN
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP the Lockdown device. FIRE to deploy the device. After a
+                                        long windup, the device Detains all enemies caught in the radius. The device can
+                                        be destroyed by enemies</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="omen" class="data">
+                <div class="container">
+                    <img src="image/omen-valorant-pc-games-2020-games-3840x2160-2822.png" alt="omen">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>CONTROLLER<i class="fa-solid fa-hand-fist"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across
+                            the field, then lets paranoia take hold as his foe scrambles to learn where he might strike
+                            next.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - PARANOIA
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY fire a shadow projectile forward, briefly reducing
+                                        the vision range of all players it touches. This projectile can pass straight
+                                        through walls.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - DARK COVER
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a shadow orb, entering a phased world to place and target
+                                        the orbs. PRESS the ability key to throw the shadow orb to the marked location,
+                                        creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while
+                                        targeting to move the marker further away. HOLD ALT FIRE while targeting to move
+                                        the marker closer. PRESS RELOAD to toggle normal targeting view.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - SHROUDED STEP
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a shadow walk ability and see its range indicator. FIRE
+                                        to begin a brief channel, then teleport to the marked location.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - FROM THE SHADOWS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a tactical map. FIRE to begin teleporting to the selected
+                                        location. While teleporting, Omen will appear as a Shade that can be destroyed
+                                        by an enemy to cancel his teleport.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="jett" class="data">
+                <div class="container">
+                    <img src="image/1317708.jpeg" alt="jett">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>DUELIST<i class="fa-solid fa-cloud-bolt"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Representing her home country of South Korea, Jett's agile and evasive fighting style lets
+                            her take risks no one else can. She runs circles around every skirmish, cutting enemies
+                            before they even know what hit them.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - UPDRAFT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY propel Jett high into the air.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - TAILWIND
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">ACTIVATE to prepare a gust of wind for a limited time. RE-USE
+                                        the wind to propel Jett in the direction she is moving. If Jett is standing
+                                        still, she propels forward. Tailwind charge resets every two kills.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - CLOUDBURST
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY throw a projectile that expands into a brief
+                                        vision-blocking cloud on impact with a surface. HOLD the ability key to curve
+                                        the smoke in the direction of your crosshair.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - BLADE STORM
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a set of highly accurate throwing knives. FIRE to throw a
+                                        single knife and recharge knives on a kill. ALT FIRE to throw all remaining
+                                        daggers but does not recharge on a kill.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="raze" class="data">
+                <div class="container">
+                    <img src="image/1212511.jpg" alt="raze">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>DUELIST<i class="fa-solid fa-cloud-bolt"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Raze explodes out of Brazil with her big personality and big guns. With her
+                            blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight
+                            spaces with a generous dose of "boom."</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - BLAST PACK
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">INSTANTLY throw a Blast Pack that will stick to surfaces.
+                                        RE-USE the ability after deployment to detonate, damaging and moving anything
+                                        hit. Raze isn't damaged by this ability, but will still take fall damage if
+                                        launched up far enough.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - PAINT SHELLS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a cluster grenade. FIRE to throw the grenade, which does
+                                        damage and creates sub-munitions, each doing damage to anyone in their range.
+                                        ALT FIRE to lob. Paint Shells charge resets every two kills.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - BOOM BOT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a Boom Bot. FIRE will deploy the bot, causing it to
+                                        travel in a straight line on the ground, bouncing off walls. The Boom Bot will
+                                        lock on to any enemies in its frontal cone and chase them, exploding for heavy
+                                        damage if it reaches them.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - SHOWSTOPPER
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a rocket launcher. FIRE to shoot a rocket that does
+                                        massive area damage on contact with anything.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skye" class="data">
+                <div class="container">
+                    <img src="image/1209928.png" alt="skye">
+                    <div class="noidung">
+                        <h3>//ROLE</h3>
+                        <P>INITIATOR<i class="fa-solid fa-sun"></i></P>
+                        <h3>//BIOGRAPHY</h3>
+                        <p>Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile
+                            territory. With her creations hampering the enemy, and her power to heal others, the team is
+                            strongest and safest by Skye’s side.</p>
+                        <h1>SPECIAL ABILITIES</h1>
+                        <div class="main-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    Q - TRAILBLAZER
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a Tasmanian tiger trinket. FIRE to send out and take
+                                        control of the predator. While in control, FIRE to leap forward, exploding in a
+                                        concussive blast and damaging directly hit enemies.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    E - GUIDING LIGHT
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a hawk trinket. FIRE to send it forward. HOLD FIRE to
+                                        guide the hawk in the direction of your crosshair. RE-USE while the hawk is in
+                                        flight to transform it into a flash that plays a hit confirm if an enemy was
+                                        within range and line of sight.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    C - REGROWTH
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a healing trinket. HOLD FIRE to channel, healing allies
+                                        in range and line of sight. Can be reused until her healing pool is depleted.
+                                        Skye cannot heal herself.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    X - SEEKERS
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">EQUIP a Seeker trinket. FIRE to send out three Seekers to track
+                                        down the three closest enemies. If a Seeker reaches its target, it Nearsights
+                                        them. Enemies can destroy the Seekers.</p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="nen">
+            <div class="row">
+                <div class="col">
+                    <img class="logo" src="image/6095213753a8bf00040ff3a5.png">
+                    <p>RIOT GAME, VALORANT, AND ANY ASSOCIATED LOGOS ARE TRADEMARKS, SERVICE MARKS, AND/OR
+                        REGISTERED
+                        TRADEMARKS OF RIOT GAMES, INC.</p>
+                </div>
+                <div class="col">
+                    <h3>OFFICE</h3>
+                    <p>ABC ROAD</p>
+                    <p>California</p>
+                    <p>Vietnam</p>
+                    <p class="email-id">riot.game@gmail.com</p>
+                    <h4>+91 - 0123456789</h4>
+                </div>
+                <div class="col">
+                    <h3>CONTACT</h3>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-arrow-turn-up"></i></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
